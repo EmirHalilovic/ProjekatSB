@@ -3,14 +3,16 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Znamenitost } from './znamenitost';
+import { environment } from '../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ZnamenitostServis {
-  private apiServerUrl = '';
+  private apiServerUrl = environment.apiBaseUrl;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   public getZnamenitosti(): Observable<Znamenitost[]> {
     return this.http.get<Znamenitost[]>(`${this.apiServerUrl}/znamenitost/all`);

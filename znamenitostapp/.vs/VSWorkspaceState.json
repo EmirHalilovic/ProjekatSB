@@ -3,9 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\assets",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\ZnamenitostServis.ts",
+  "SelectedNode": "\\src\\app\\znamenitost.servis.ts",
   "PreviewInSolutionExplorer": false
 }

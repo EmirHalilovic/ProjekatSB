@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Znamenitost } from './znamenitost';
-import { environment } from '../environments/environment';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({

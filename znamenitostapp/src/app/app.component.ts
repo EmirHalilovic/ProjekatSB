@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   title(title: any) {
       throw new Error('Method not implemented.');
   }
-  public znamenitosti : Znamenitost[];
+  public znamenitosti: Znamenitost[] = [];
   constructor(private znamenitostServis: ZnamenitostServis) {}
 
   ngOnInit() {

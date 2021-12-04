@@ -8,5 +8,8 @@ export interface Znamenitost {
   opcina: string;
   drzava: string;
   kod: string;
+  ocjena: number;
+  prosjekocjene: number;
+  aktivnost: string;
 }
 

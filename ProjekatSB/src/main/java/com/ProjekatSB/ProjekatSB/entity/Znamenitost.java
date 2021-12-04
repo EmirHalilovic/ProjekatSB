@@ -28,8 +28,12 @@ public class Znamenitost implements Serializable {
     private String opcina;
     private String drzava;
     private String kod;
+    private int ocjena;
+    private double prosjekocjene;
+    private String aktivnost ;
 
-public Znamenitost (String naziv,String opis, String slika,Double lat,Double lon,String opcina,String drzava,String kod){
+
+public Znamenitost (String naziv,String opis, String slika,Double lat,Double lon,String opcina,String drzava,String kod,Integer ocjena,Double prosjekocjene,String aktivnost){
 
     this.naziv=naziv;
     this.opis=opis;
@@ -39,15 +43,21 @@ public Znamenitost (String naziv,String opis, String slika,Double lat,Double lon
     this.opcina=opcina;
     this.drzava=drzava;
     this.kod=kod;
+    this.ocjena=ocjena;
+    this.prosjekocjene=prosjekocjene;
+    this.aktivnost=aktivnost;
 }
 public int getId(){
+    
     return id;
 }
 public void setid(int id){
+    
     this.id=id;
 }
 public String getnaziv() {
-return naziv;
+
+    return naziv;
 }
 public void setnaziv(String naziv){
     this.naziv=naziv;
@@ -64,43 +74,72 @@ public void setnaziv(String naziv){
         return slika;
     }
     public void setslika(String slika){
-        this.slika=slika;
+        
+    this.slika=slika;
     }
 
     public String getopcina() {
         return opcina;
     }
     public void setopcina(String opcina){
-        this.opcina=opcina;
+        
+    this.opcina=opcina;
     }
 
     public String getdrzava() {
         return drzava;
     }
     public void setdrzava(String drzava){
-        this.drzava=drzava;
+        
+    this.drzava=drzava;
     }
     public double getlon() {
         return lon;
     }
     public void setlon(double lon){
-        this.lon=lon;
+        
+    this.lon=lon;
     }
     public double getlat() {
-        return lat;
+        
+    return lat;
     }
     public void setlat(double lat) {
-        this.lat = lat;
+        
+    this.lat = lat;
     }
     public String getkod() {
         return kod;
     }
+    
     public void setkod(String kod) {
         this.kod = kod;
+    }
+    public int getocjena() {
+        return ocjena;
+    }
+
+    public void setocjena(int ocjena) {
+        this.ocjena = ocjena;
+    }
+    public double getprosjekocjene() {
+        return prosjekocjene;
+    }
+
+    public void setprosjekocjene(double prosjekocjene) {
+        this.prosjekocjene = prosjekocjene;
+    }
+
+    public String getpaktivnost() {
+        return aktivnost;
+    }
+
+    public void setaktivnost(String aktivnost) {
+        this.aktivnost = aktivnost;
     }
         @Override
         public String toString(){
             return
-                    naziv + '\'' + opis + '\'' + slika + '\'' + lat + '\'' + lon + '\'' + opcina + '\'' + drzava+ '\'' + kod;
+                    naziv + '\'' + opis + '\'' + slika + '\'' + lat + '\'' + lon + '\'' + opcina + '\'' + drzava+ '\'' + kod+ '\'' +ocjena+ '\'' +prosjekocjene+ '\'' +aktivnost;
         }
 }
